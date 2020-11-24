@@ -6,6 +6,7 @@ class VillasController < ApplicationController
 
   def show
     @villa = Villa.find((params[:id]))
+    @booking = Booking.new
   end
 end
 
